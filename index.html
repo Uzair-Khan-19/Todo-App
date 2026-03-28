@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO List App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="header">
+        <h1>
+          <i class="fa-solid fa-list"></i>
+          MY TODO LISTS
+        </h1>
+        <p id="date-time"></p>
+      </nav>
+      <div class="input-task">
+        <input type="text" id="inputBox" placeholder="Enter Your Task!" />
+        <button id="add-btn" onclick="addTask()">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <ul id="mylist">
+        <!-- <li class="checked">task 1</li> 
+      <li>task 2</li>
+      <li>task 3</li>  -->
+      </ul>
+      <div class="empty-box">
+        <i class="fas fa-clipboard-list"></i>
+        <p>There is no Tasks!</p>
+      </div>
+      <footer>
+        <div id="task-left">Tasks Left</div>
+        <button id="clear-all">Clear All</button>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
